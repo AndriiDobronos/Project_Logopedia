@@ -1,0 +1,34 @@
+.home {
+  background: var(--background-center);
+  padding: 36px;
+  .home_title  {
+    margin-top: -6px;
+    text-align: center;
+  }
+  .home_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    .home_image {
+      width: calc(40vw + 32px);
+      max-height: 100%;
+      border-radius: 12px;
+      box-shadow: 12px 12px 12px #c4c2c2;
+    }
+    .home_text {
+      width: 40vw;
+      background: #FFFFFF;
+      border-radius: 12px;
+      box-shadow: 12px 12px 12px  #c4c2c2;
+      padding: 16px;
+      margin-top: 0;
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+
+
+
+
+}

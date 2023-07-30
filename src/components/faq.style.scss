@@ -1,0 +1,90 @@
+.faq {
+  background: var(--background-center);
+  padding-bottom: 40px;
+  .faq-shell {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 18vw;
+    padding-right: 18vw;
+    justify-content:space-between;
+  }
+
+
+  .faq__title {
+    text-align: center ;
+    font-size: 48px;
+    margin: 0 0 79px;
+  }
+  .faq-img {
+    width: 24vw;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .accordion {
+    margin: 0 auto 20px;
+    max-width: 940px;
+    padding-left: 36px;
+  }
+  .accordion__toggle {
+    text-align: left;
+    color: var(--main-color);
+    font-family: "Oswald",sans-serif ;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+
+  }
+  .accordion__toggle::-webkit-details-marker,
+  .accordion__toggle::marker {
+    display: none;
+    font-size: 0;
+  }
+  .accordion__toggle:before,
+  .accordion__toggle:after {
+    content: "";
+    position: absolute;
+    /*    display: block;  - for handmade cross  */
+    display: none;    /***** !!!!! for SVG CROSS ****/
+    width: 20px;
+    height: 3px;
+    background: var(--main-color);
+    border-radius: 5px;
+    left: -36px;
+    top: 50%;
+    transform: translateY(-50%) ;
+  }
+  .accordion__toggle:after {
+    transform:translateY(-50%) rotate(90deg) ;
+  }
+  .accordion[open] {
+    margin-bottom: 40px;
+  }
+  .accordion[open] .accordion__toggle {
+    color: var(--main-color);
+  }
+  .accordion[open] .accordion__toggle:before,
+  .accordion[open] .accordion__toggle:after {
+    background: var(--main-color);
+    transform: translate(-50%) rotate(45deg) ;
+  }
+  .accordion[open] .accordion__toggle:after {
+    transform: translate(-50%) rotate(135deg) ;
+  }
+  .accordion[open] .accordion__toggle svg {
+    transform: rotate(45deg) ;
+  }
+  .accordion[open] .accordion__toggle svg {
+    fill: var(--main-color);
+  }
+  .accordion__toggle svg {
+    fill: var(--main-color);
+    position: absolute;
+    left: -36px;
+    transform: translate(0%) ;
+    top: 25%;
+  }
+  .faq-text {
+    text-align: left;
+  }
+}
